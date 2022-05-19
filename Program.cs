@@ -65,58 +65,18 @@ void MooseSays(string message)
 MooseSays("H I, I'M  E N T H U S I A S T I C !");
 MooseSays("I really am enthusiastic");
 
-void CanadaQuestion()
+void AskQuestion(string question)
 {
-    bool isTrue = MooseAsks("Is Canada Real?");
+    bool isTrue = MooseAsks($"{question}");
     if (isTrue)
     {
-        MooseSays("Really? It seems very unlikely.");
+        MooseSays("HOLY MACKEROLE BATMAN!!");
     }
     else 
     {
-        MooseSays("I  K N E W  I T !!!");
+        MooseSays("Hmmm, bummer.");
     }
 }
 
-void EatsGerbilsQuestion()
-{
-    bool eatsGerbils = MooseAsks("Do you eat gerbils?");
-    if (eatsGerbils)
-    {
-        MooseSays("Yay!");
-    }
-    else
-    {
-        MooseSays("You should try it!");
-    }
-}
-
-void KoolAidManQuestion()
-{
-    bool knowsKoolAidMan = MooseAsks("Do you know the Kool Aid Man?");
-    if (knowsKoolAidMan)
-    {
-        MooseSays("O H  Y E A !");
-    }
-    else
-    {
-        MooseSays("Well, dang ol boom.");
-    }
-}
-
-void SecretQuestion()
-{
-    bool wantsSecret = MooseAsks("Do you want to know a secret?");
-    if (wantsSecret)
-    {
-        MooseSays("ME TOO!!!! I love secrets...tell me one!");
-    }
-    else
-    {
-        MooseSays("Oh, no...secrets are the best, I love to share them!");
-    }
-}
-
-KoolAidManQuestion();
-EatsGerbilsQuestion();
+AskQuestion("You down with OPP?");
 }
