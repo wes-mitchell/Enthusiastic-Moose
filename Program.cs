@@ -65,6 +65,8 @@ void MooseSays(string message)
 MooseSays("H I, I'M  E N T H U S I A S T I C !");
 MooseSays("I really am enthusiastic");
 
+//Let the moose ask a question.
+
 void AskQuestion(string question)
 {
     bool isTrue = MooseAsks($"{question}");
